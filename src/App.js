@@ -1,12 +1,16 @@
+import SearchEngine from "./SearchEngine";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <div className="header">
+      <header className="header">
         <h1>Dictionary</h1>
         <p>Type a word to know its meaning </p>
-      </div>
+        <SearchEngine />
+      </header>
+      <main />
+      <footer>Coded by Miss Malory, open-sourced on GitHub</footer>
     </div>
   );
 }
