@@ -5,22 +5,24 @@ export default function SearchEngine() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    alert(`searching for ${word}`);
+    alert(`Searching for ${word}`);
   }
+
   function handleWordChange(event) {
     setWord(event.target.value);
     console.log(event.target.value);
   }
 
   return (
-    <div className="SearchEngine">
+    <div className="SearchEngine mt-4">
       <form onSubmit={handleSubmit}>
         <input
+          className="m-2"
           type="search"
           placeholder="Type here..."
           onChange={handleWordChange}
         />
-        <input type="submit" value="Search" />
+        <input className="m-2" type="submit" value="Search" />
       </form>
     </div>
   );
